@@ -1,0 +1,20 @@
+<mat-card>
+    <mat-card-title>Alterar Usuário</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome"
+                [(ngModel)]="usuarios.name" name="name">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Cargo"
+                [(ngModel)]="usuarios.cargo" name="cargo">
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="updateUsuarios()" color="primary">
+        Atualizar
+    </button>
+    
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>

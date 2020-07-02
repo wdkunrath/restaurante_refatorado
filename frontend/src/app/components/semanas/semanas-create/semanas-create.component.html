@@ -1,0 +1,17 @@
+<mat-card>
+    <mat-card-title>Nova Semana</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome"
+                [(ngModel)]="semanas.name" name="name">
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="createSemanas()" color="primary">
+        Salvar
+    </button>
+    
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>
+

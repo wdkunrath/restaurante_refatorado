@@ -1,0 +1,21 @@
+<mat-card>
+    <mat-card-title>Novo Usuário</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome"
+                [(ngModel)]="usuarios.username" name="username">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Cargo"
+                [(ngModel)]="usuarios.cargo" name="cargo">
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="createUsuarios()" color="primary">
+        Salvar
+    </button>
+    
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>
+

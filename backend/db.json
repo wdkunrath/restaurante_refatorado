@@ -1,0 +1,120 @@
+{
+  "restaurant": [
+    {
+      "id": 1,
+      "name": "Restaurante Grill"
+    },
+    {
+      "id": 2,
+      "name": "Restaurante Mama Mia"
+    },
+    {
+      "id": 3,
+      "name": "Restaurante Tokio"
+    },
+    {
+      "id": 4,
+      "name": "Restaurante Menino Deus"
+    },
+    {
+      "id": 5,
+      "name": "Restaurante Solene"
+    },
+    {
+      "id": 6,
+      "name": "Restaurante Bamboo"
+    },
+    {
+      "id": 7,
+      "name": "Restaurante Casa Nostra"
+    },
+    {
+      "id": 8,
+      "name": "Restaurante Esquina 8"
+    },
+    {
+      "id": 9,
+      "name": "Restaurante Nona"
+    },
+    {
+      "id": 10,
+      "name": "Restaurante German"
+    }
+  ],
+  "user": [
+    {
+      "id": 1,
+      "username": "Funcionario1",
+      "cargo": "padrao",
+      "password": "funcionario",
+      "firstName": "Funcionario",
+      "lastName": "1",
+      "token": "XSJD"
+    },
+    {
+      "id": 8,
+      "username": "Funcionario8",
+      "cargo": "moderador",
+      "password": "funcionario",
+      "firstName": "Funcionario",
+      "lastName": "8",
+      "token": "XSJD"
+    }   
+  ],
+  "semana": [
+    {
+      "id": 1,
+      "name": "Semana 1",
+      "dataInit": "08/06/2020",
+      "dataEnd": "12/06/2020"
+    }
+  ],
+  "dia-semana": [
+    {
+      "id": 1,
+      "name": "Segunda"
+    },
+    {
+      "id": 2,
+      "name": "Terça"
+    },
+    {
+      "id": 3,
+      "name": "Quarta"
+    },
+    {
+      "id": 4,
+      "name": "Quinta"
+    },
+    {
+      "id": 5,
+      "name": "Sexta"
+    },
+    {
+      "id": 6,
+      "name": "Sabado"
+    },
+    {
+      "id": 7,
+      "name": "Domingo"
+    }
+  ],
+  "votacao-restaurante": [
+    {
+      "id": 1,
+      "semana": "Semana 1 ",
+      "diaSemana": "Segunda",
+      "restaurant": "Restaurante Grill",
+      "countVotacao": 2 ,
+      "UserID": 1                                            
+    },                  
+    {
+      "semana": "Semana 1",
+      "diaSemana": "Quinta",
+      "restaurant": "Restaurante Menino Deus",
+      "countVotacao": 0,
+      "id": 2,
+      "UserID": 1                          
+    }
+  ]
+}
