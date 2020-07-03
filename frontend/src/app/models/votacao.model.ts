@@ -1,7 +1,7 @@
 export interface Votacao{
     id?: number
-    semana: string
+    semana: {}
     diaSemana: string
     restaurant: string
-    countVotacao: number
+    user: string
 }

@@ -3,6 +3,10 @@
     align-items: center;
 }
 
+.mr200{
+  margin-left: 200px;
+}
+
 .header a {
     display: flex;
     align-items: center;

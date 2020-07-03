@@ -1,17 +1,21 @@
 import { Injectable } from "@angular/core";
-import { HttpClient } from "@angular/common/http";
 import { MatSnackBar } from "@angular/material/snack-bar";
-import { Restaurant } from "../models/restaurant.model";
+import { HttpClient } from "@angular/common/http";
+import { Votacao } from "@app/models/votacao.model";
 import { Observable, EMPTY } from "rxjs";
 import { map, catchError } from "rxjs/operators";
 
 @Injectable({
   providedIn: "root",
 })
-export class RestaurantService {
-  baseUrl = "http://localhost:3001/restaurant";
 
-  constructor(private snackBar: MatSnackBar, private http: HttpClient) {}
+export class VotacaoService {
+  baseUrl = "http://localhost:3001/votacao-restaurante";
+
+  constructor(
+    private snackBar: MatSnackBar,
+    private http: HttpClient
+  ) {}
 
   showMessage(msg: string, isError: boolean = false): void {
     this.snackBar.open(msg, "X", {
@@ -22,39 +26,39 @@ export class RestaurantService {
     });
   }
 
-  create(restaurant: Restaurant): Observable<Restaurant> {
-    return this.http.post<Restaurant>(this.baseUrl, restaurant).pipe(
+  create(votacao: Votacao): Observable<Votacao> {
+    return this.http.post<Votacao>(this.baseUrl, votacao).pipe(
       map((obj) => obj),
       catchError((e) => this.errorHandler(e))
     );
   }
 
-  read(): Observable<Restaurant[]> {
-    return this.http.get<Restaurant[]>(this.baseUrl).pipe(
+  read(): Observable<Votacao[]> {
+    return this.http.get<Votacao[]>(this.baseUrl).pipe(
       map((obj) => obj),
       catchError((e) => this.errorHandler(e))
     );
   }
 
-  readById(id: number): Observable<Restaurant> {
+  readById(id: number): Observable<Votacao> {
     const url = `${this.baseUrl}/${id}`;
-    return this.http.get<Restaurant>(url).pipe(
+    return this.http.get<Votacao>(url).pipe(
       map((obj) => obj),
       catchError((e) => this.errorHandler(e))
     );
   }
 
-  update(restaurant: Restaurant): Observable<Restaurant> {
-    const url = `${this.baseUrl}/${restaurant.id}`;
-    return this.http.put<Restaurant>(url, restaurant).pipe(
+  update(votacao: Votacao): Observable<Votacao> {
+    const url = `${this.baseUrl}/${votacao.id}`;
+    return this.http.put<Votacao>(url, votacao).pipe(
       map((obj) => obj),
       catchError((e) => this.errorHandler(e))
     );
   }
-
-  delete(id: number): Observable<Restaurant> {
+  // Opção Moderador - Melhoria
+  delete(id: number): Observable<Votacao> {
     const url = `${this.baseUrl}/${id}`;
-    return this.http.delete<Restaurant>(url).pipe(
+    return this.http.delete<Votacao>(url).pipe(
       map((obj) => obj),
       catchError((e) => this.errorHandler(e))
     );
@@ -64,4 +68,5 @@ export class RestaurantService {
     this.showMessage("Ocorreu um erro!", true);
     return EMPTY;
   }
+
 }

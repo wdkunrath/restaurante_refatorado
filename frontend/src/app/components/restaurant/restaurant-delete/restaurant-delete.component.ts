@@ -1,7 +1,7 @@
 import { Router, ActivatedRoute } from "@angular/router";
 import { Component, OnInit } from "@angular/core";
-import { Restaurant } from "../../../models/restaurant.model";
-import { RestaurantService } from "../../../service/restaurant.service";
+import { Restaurant } from "@app/models/restaurant.model";
+import { RestaurantService } from "@app/services/restaurant.service";
 
 @Component({
   selector: "app-restaurant-delete",

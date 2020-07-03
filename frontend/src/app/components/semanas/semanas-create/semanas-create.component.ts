@@ -1,24 +1,28 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Semanas } from '../../../models/semana.model';
-import { SemanaService } from '../../../service/semana.service';
+import { Semanas } from '@app/models/semana.model';
+import { SemanaService } from '@app/services/semana.service';
 
 @Component({
   selector: 'app-semanas-create',
   templateUrl: './semanas-create.component.html',
   styleUrls: ['./semanas-create.component.css']
 })
+
+
 export class SemanasCreateComponent implements OnInit {
 
   semanas: Semanas = {
-    name: ''
+    name: '',
+    dataInit: new Date,
+    dataEnd: new Date
   }
 
   constructor(private semanaService: SemanaService,
       private router: Router) { }
 
   ngOnInit(): void {
-    
+
   }
 
   createSemanas(): void {

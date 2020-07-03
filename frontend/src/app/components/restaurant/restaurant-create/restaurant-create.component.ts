@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Restaurant } from "../../../models/restaurant.model";
-import { RestaurantService } from "../../../service/restaurant.service";
+import { Restaurant } from "@app/models/restaurant.model";
+import { RestaurantService } from "@app/services/restaurant.service";
 
 @Component({
   selector: 'app-restaurant-create',
@@ -18,7 +18,7 @@ export class RestaurantCreateComponent implements OnInit {
       private router: Router) { }
 
   ngOnInit(): void {
-    
+
   }
 
   createRestaurant(): void {

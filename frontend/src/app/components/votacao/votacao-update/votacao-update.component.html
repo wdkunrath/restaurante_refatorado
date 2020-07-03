@@ -1,0 +1,42 @@
+<mat-card>
+    <mat-card-title>Alterar Semana</mat-card-title>
+    <form>
+      <h3>Selecione a Semana:</h3>
+      <mat-form-field>
+          <mat-label>Semana</mat-label>
+          <select matNativeControl [(ngModel)]="votacao.semana" name="Semana">
+            <option value="" selected></option>
+            <option *ngFor="let semana of semanas;let i = index" [value]="semanas[i].name">
+              {{semanas[i].name}}
+            </option>
+          </select>
+      </mat-form-field>
+      <h3>Selecione o Dia:</h3>
+      <mat-form-field>
+          <mat-label>Dia</mat-label>
+          <select matNativeControl [(ngModel)]="votacao.diaSemana" name="diaSemana">
+          <option value="" selected></option>
+          <option *ngFor="let diaSemana of diaSemanas;let i = index" [value]="diaSemanas[i].name">
+              {{diaSemanas[i].name}}
+          </option>
+          </select>
+      </mat-form-field>
+      <h3>Selecione o Restaurante:</h3>
+      <mat-form-field>
+          <mat-label>Restaurante</mat-label>
+          <select matNativeControl [(ngModel)]="votacao.restaurant" name="restaurant">
+          <option value="" selected></option>
+          <option *ngFor="let restaurant of restaurants;let i = index" [value]="restaurants[i].name">
+              {{restaurants[i].name}}
+          </option>
+          </select>
+      </mat-form-field>
+  </form>
+    <button mat-raised-button (click)="updateVotacao()" color="primary">
+        Atualizar
+    </button>
+
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>

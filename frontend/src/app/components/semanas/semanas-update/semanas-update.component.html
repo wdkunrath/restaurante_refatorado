@@ -5,11 +5,30 @@
             <input matInput placeholder="Nome"
                 [(ngModel)]="semanas.name" name="name">
         </mat-form-field>
+
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+              <div for="dataInit" class="col-3 col-form-label">Data Inicial</div>
+              <div class="col-4">
+                <input matInput class="form-control" type="date" [(ngModel)]="semanas.dataInit" [value]="semanas.dataInit" name="dataInit"id="dataInit">
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <div for="dataEnd" class="col-3 col-form-label">Data Fim</div>
+              <div class="col-4">
+                <input  matInput class="form-control" type="date" [(ngModel)]="semanas.dataEnd" [value]="semanas.dataEnd" name="dataEnd" id="dataEndt">
+              </div>
+            </div>
+          </div>
+        </div>
     </form>
     <button mat-raised-button (click)="updateSemanas()" color="primary">
         Atualizar
     </button>
-    
+
     <button mat-raised-button (click)="cancel()">
         Cancelar
     </button>

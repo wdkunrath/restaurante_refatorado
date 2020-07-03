@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Semanas } from '../../../models/semana.model';
-import { SemanaService } from '../../../service/semana.service';
+import { Semanas } from '@app/models/semana.model';
+import { SemanaService } from '@app/services/semana.service';
 
 @Component({
   selector: 'app-semanas-read',
@@ -10,8 +10,8 @@ import { SemanaService } from '../../../service/semana.service';
 export class SemanasReadComponent implements OnInit {
 
   semanas: Semanas[]
-  displayedColumns = ['id', 'name', 'action']
-  
+  displayedColumns = ['id', 'name','dataInit','dataEnd', 'action']
+
   constructor(private semanaService: SemanaService) { }
 
   ngOnInit(): void {

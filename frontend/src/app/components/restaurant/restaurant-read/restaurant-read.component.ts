@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Restaurant } from "../../../models/restaurant.model";
-import { RestaurantService } from "../../../service/restaurant.service";
+import { Restaurant } from "@app/models/restaurant.model";
+import { RestaurantService } from "@app/services/restaurant.service";
 
 @Component({
   selector: 'app-restaurant-read',
@@ -9,15 +9,15 @@ import { RestaurantService } from "../../../service/restaurant.service";
 })
 export class RestaurantReadComponent implements OnInit {
 
-  restaurant: Restaurant[]
-  displayedColumns = ['id', 'name', 'action']
-  
   constructor(private restaurantService: RestaurantService) { }
+
+  restaurant: Restaurant[]
+
+  displayedColumns = ['id', 'name', 'action']
 
   ngOnInit(): void {
     this.restaurantService.read().subscribe(restaurant => {
       this.restaurant = restaurant
-    })
+    });
   }
-
 }

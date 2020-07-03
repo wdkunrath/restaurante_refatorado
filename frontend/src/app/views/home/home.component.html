@@ -1,47 +1,57 @@
-<mat-card class="home mat-elevation-z3">
-    <mat-card-title class="title">
-        Bem Vindo!
-    </mat-card-title>
-    <mat-card-subtitle class="subtitle">
-        <h1>Introdução</h1>
-        <p>Os times da DBserver enfrentam um grande problema. Como eles são muito democráticos, todos os dias eles gastam 30 minutos decidindo onde eles irão almoçar.</p>
-        <p>Vamos fazer um pequeno sistema que auxilie essa tomada de decisão!</p>
-        <br>
-        <h1>Instruções:</h1>
-        <ul>
-            <li>Não precisa implementar o banco de dados, você pode retornar dados fakes.</li>
-            <li>Todas as estórias devem ser implementadas com um nível aceitável de testes automatizados.</li>
-            <li>Nos mande o link para o zip do código, pode ser via DropBox ou algo do gênero.</li>
-            <li>Crie um readme que inclua:
-                <ul>
-                    <li>Requisitos de ambiente necessários para compilar e rodar o software</li>
-                    <li>Instruções de como utilizar o sistema.</li>
-                    <li>O que vale destacar no código implementado</li>
-                    <li>O que poderia ser feito para melhorar o sistema?</li>
-                    <li>Algo a mais que você tenha a dizer</li>
-                </ul>
+﻿<mat-card class="home mat-elevation-z3">
+  <mat-card-title class="title">
+      Bem Vindo!
+  </mat-card-title>
+  <mat-card-subtitle class="subtitle">
+      <h1>Introdução</h1>
+      <p>Os times da DBserver enfrentam um grande problema. Como eles são muito democráticos, todos os dias eles gastam 30 minutos decidindo onde eles irão almoçar.</p>
+      <p>Vamos fazer um pequeno sistema que auxilie essa tomada de decisão!</p>
+      <br>
+      <h1>Instruções:</h1>
+      <ul>
+          <li>Não precisa implementar o banco de dados, você pode retornar dados fakes.</li>
+          <li>Todas as estórias devem ser implementadas com um nível aceitável de testes automatizados.</li>
+          <li>Nos mande o link para o zip do código, pode ser via DropBox ou algo do gênero.</li>
+          <li>Crie um readme que inclua:
+              <ul>
+                  <li>Requisitos de ambiente necessários para compilar e rodar o software</li>
+                  <li>Instruções de como utilizar o sistema.</li>
+                  <li>O que vale destacar no código implementado</li>
+                  <li>O que poderia ser feito para melhorar o sistema?</li>
+                  <li>Algo a mais que você tenha a dizer</li>
+              </ul>
+          </li>
+      </ul>
+      <hr>
+      <h1>Usuários</h1>
+        <div *ngIf="loading" class="spinner-border spinner-border-sm"></div>
+        <ul *ngIf="users">
+            <li *ngFor="let user of users">{{user.username}}
+              <ul>
+                <li>Senha: {{user.password}}</li>
+              </ul>
             </li>
         </ul>
-        <hr>
-        <h1>Estória 1</h1>
-        <p>Eu como <strong>profissional faminto</strong></p>
-        <p>Quero <strong>votar no meu restaurante favorito</strong></p>
-        <p>Para que <strong>eu consiga democraticamente levar meus colegas a comer onde eu gosto.</strong></p>
-        <h2>Critério de Aceitação</h2>
-        <ul><li>Um profissional só pode votar em um restaurante por dia.</li></ul>
-        <hr>
-        <h1>Estória 2</h1>
-        <p>Eu como <strong>facilitador do processo de votação</strong></p>
-        <p>Quero <strong>que um restaurante não possa ser repetido durante a semana</strong></p>
-        <p>Para que <strong>não precise ouvir reclamações infinitas!</strong></p>
-        <h2>Critério de Aceitação</h2>
-        <ul><li>O mesmo restaurante não pode ser escolhido mais de uma vez durante a semana.</li></ul>
-        <hr>
-        <h1>Estória 3</h1>
-        <p>Eu como <strong>profissional faminto</strong></p>
-        <p>Quero <strong>saber antes do meio dia qual foi o restaurante escolhido</strong></p>
-        <p>Para que <strong>eu possa me despir de preconceitos e preparar o psicológico.</strong></p>
-        <h2>Critério de Aceitação</h2>
-        <ul><li>Mostrar de alguma forma o resultado da votação.</li></ul>
-    </mat-card-subtitle>
+      <hr>
+      <h1>Estória 1</h1>
+      <p>Eu como <strong>profissional faminto</strong></p>
+      <p>Quero <strong>votar no meu restaurante favorito</strong></p>
+      <p>Para que <strong>eu consiga democraticamente levar meus colegas a comer onde eu gosto.</strong></p>
+      <h2>Critério de Aceitação</h2>
+      <ul><li>Um profissional só pode votar em um restaurante por dia.</li></ul>
+      <hr>
+      <h1>Estória 2</h1>
+      <p>Eu como <strong>facilitador do processo de votação</strong></p>
+      <p>Quero <strong>que um restaurante não possa ser repetido durante a semana</strong></p>
+      <p>Para que <strong>não precise ouvir reclamações infinitas!</strong></p>
+      <h2>Critério de Aceitação</h2>
+      <ul><li>O mesmo restaurante não pode ser escolhido mais de uma vez durante a semana.</li></ul>
+      <hr>
+      <h1>Estória 3</h1>
+      <p>Eu como <strong>profissional faminto</strong></p>
+      <p>Quero <strong>saber antes do meio dia qual foi o restaurante escolhido</strong></p>
+      <p>Para que <strong>eu possa me despir de preconceitos e preparar o psicológico.</strong></p>
+      <h2>Critério de Aceitação</h2>
+      <ul><li>Mostrar de alguma forma o resultado da votação.</li></ul>
+  </mat-card-subtitle>
 </mat-card>

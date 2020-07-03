@@ -1,4 +1,4 @@
-import { HeaderService } from '../../components/template/header/header.service';
+import { HeaderService } from '@app/services/header.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router'
 

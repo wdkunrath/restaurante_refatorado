@@ -5,11 +5,31 @@
             <input matInput placeholder="Nome"
                 [(ngModel)]="semanas.name" name="name">
         </mat-form-field>
+
+        <div class="row">
+          <div class="col">
+            <div class="form-group row">
+              <label for="dataInit" class="col-3 col-form-label">Data Inicial</label>
+              <div class="col-4">
+                <input class="form-control" type="date" [(ngModel)]="semanas.dataInit" id="dataInit">
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group row">
+              <label for="dataEnd" class="col-3 col-form-label">Data Fim</label>
+              <div class="col-4">
+                <input class="form-control" type="date" [(ngModel)]="semanas.dataEnd" id="dataEndt">
+              </div>
+            </div>
+          </div>
+        </div>
+
     </form>
     <button mat-raised-button (click)="createSemanas()" color="primary">
         Salvar
     </button>
-    
+
     <button mat-raised-button (click)="cancel()">
         Cancelar
     </button>

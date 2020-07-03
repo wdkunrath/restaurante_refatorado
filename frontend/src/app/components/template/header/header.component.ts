@@ -1,4 +1,4 @@
-import { HeaderService } from './header.service';
+import { HeaderService } from '@app/services/header.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({

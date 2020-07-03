@@ -2,9 +2,12 @@
 import { HttpRequest, HttpResponse, HttpHandler, HttpEvent, HttpInterceptor, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { Observable, of, throwError } from 'rxjs';
 import { delay, mergeMap, materialize, dematerialize } from 'rxjs/operators';
-import { Usuarios } from './../models/usuarios.model';
 
-const users: Usuarios[] = [{ id: 1, username: 'test',cargo:'padrao', password: 'test', firstName: 'Test', lastName: 'User' }];
+import { User } from '@app/models';
+
+const users: User[] = [{ id: 1, username: 'test', cargo:'padrao', password: 'test', firstName: 'Test', lastName: 'User' },
+{ id: 2,username: 'Funcionario1',cargo: 'padrao',password: 'funcionario',firstName: 'Funcionario',lastName: 'Funcionario1'},
+{ id: 3,username: 'Funcionario8',cargo: 'moderador',password: 'moderador',firstName: 'Moderador',lastName: 'Moderador'}];
 
 @Injectable()
 export class FakeBackendInterceptor implements HttpInterceptor {
@@ -27,7 +30,7 @@ export class FakeBackendInterceptor implements HttpInterceptor {
                 default:
                     // pass through any requests not handled above
                     return next.handle(request);
-            }    
+            }
         }
 
         // route functions

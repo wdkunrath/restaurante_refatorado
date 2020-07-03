@@ -1,6 +1,7 @@
-import { HeaderService } from '../../components/template/header/header.service';
-import { Component, OnInit } from '@angular/core';
+import { HeaderService } from '@app/services/header.service';
+import { Component, OnInit, Pipe  } from '@angular/core';
 import { Router } from '@angular/router'
+;
 
 @Component({
   selector: 'app-semanas-crud',
@@ -9,7 +10,9 @@ import { Router } from '@angular/router'
 })
 export class SemanasCrudComponent implements OnInit {
 
-  constructor(private router: Router, private headerService: HeaderService) {
+  constructor(
+    private router: Router,
+    private headerService: HeaderService) {
     headerService.headerData = {
       title: 'Cadastro da Semana',
       icon: 'date_range',
@@ -17,8 +20,7 @@ export class SemanasCrudComponent implements OnInit {
     }
   }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
   navigateToSemanasCreate(): void {
     this.router.navigate(['/semanas/create'])

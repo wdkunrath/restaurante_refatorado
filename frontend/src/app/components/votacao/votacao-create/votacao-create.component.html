@@ -6,7 +6,7 @@
             <mat-label>Semana</mat-label>
             <select matNativeControl [(ngModel)]="votacao.semana" name="Semana">
               <option value="" selected></option>
-              <option *ngFor="let semana of semanas;let i = index" [value]="semanas[i].name">                
+              <option *ngFor="let semana of semanas;let i = index" [value]="semanas[i].name">
                 {{semanas[i].name}}
               </option>
             </select>
@@ -30,16 +30,12 @@
                 {{restaurants[i].name}}
             </option>
             </select>
-        </mat-form-field>  
-        <mat-form-field>
-            <input matInput placeholder="Qnt Votado"
-                [value]="votacao.countVotacao" name="countVotacao" disabled>
         </mat-form-field>
     </form>
     <button mat-raised-button (click)="createVotacao()" color="primary">
         Salvar
     </button>
-    
+
     <button mat-raised-button (click)="cancel()">
         Cancelar
     </button>

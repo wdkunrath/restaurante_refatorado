@@ -3,18 +3,18 @@ import { MatSnackBar } from "@angular/material/snack-bar";
 import { HttpClient } from "@angular/common/http";
 import { Observable, EMPTY } from "rxjs";
 import { map, catchError } from "rxjs/operators";
-import { DiaSemana } from "../models/diaSemana.model";
+import { DiaSemana } from "@app/models/diaSemana.model";
 
 @Injectable({
     providedIn: "root",
 })
 
-export class DiaSemanaService {    
+export class DiaSemanaService {
     baseUrl = "http://localhost:3001/dia-semana";
-    
+
 
     constructor(private snackBar: MatSnackBar, private http: HttpClient) {}
-  
+
     showMessage(msg: string, isError: boolean = false): void {
       this.snackBar.open(msg, "X", {
         duration: 3000,

@@ -1,6 +1,6 @@
-import { HeaderService } from '../../components/template/header/header.service';
+import { HeaderService } from '@app/services/header.service';
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router'
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-votacao-crud',
@@ -9,7 +9,9 @@ import { Router } from '@angular/router'
 })
 export class VotacaoCrudComponent implements OnInit {
 
-  constructor(private router: Router, private headerService: HeaderService) {
+  constructor(
+    private router: Router,
+    private headerService: HeaderService) {
     headerService.headerData = {
       title: 'Votação',
       icon: 'analytics',
@@ -18,6 +20,7 @@ export class VotacaoCrudComponent implements OnInit {
   }
 
   ngOnInit(): void {
+
   }
 
   navigateToVotacaoCreate(): void {

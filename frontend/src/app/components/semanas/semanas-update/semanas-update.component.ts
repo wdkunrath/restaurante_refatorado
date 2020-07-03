@@ -1,7 +1,7 @@
 import { Router, ActivatedRoute } from "@angular/router";
 import { Component, OnInit } from "@angular/core";
-import { Semanas } from '../../../models/semana.model';
-import { SemanaService } from '../../../service/semana.service';
+import { Semanas } from '@app/models/semana.model';
+import { SemanaService } from '@app/services/semana.service';
 
 @Component({
   selector: "app-semanas-update",
@@ -26,6 +26,7 @@ export class SemanasUpdateComponent implements OnInit {
 
   updateSemanas(): void {
     this.semanaService.update(this.semanas).subscribe(() => {
+      console.log(this.semanas)
       this.semanaService.showMessage("Semana atualizado com sucesso!");
       this.router.navigate(["/semanas"]);
     });

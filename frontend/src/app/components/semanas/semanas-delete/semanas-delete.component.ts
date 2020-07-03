@@ -1,7 +1,7 @@
 import { Router, ActivatedRoute } from "@angular/router";
 import { Component, OnInit } from "@angular/core";
-import { Semanas } from '../../../models/semana.model';
-import { SemanaService } from '../../../service/semana.service';
+import { Semanas } from '@app/models/semana.model';
+import { SemanaService } from '@app/services/semana.service';
 
 @Component({
   selector: "app-semanas-delete",
