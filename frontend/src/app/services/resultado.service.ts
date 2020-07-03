@@ -89,11 +89,11 @@ export class ResultadoService {
           let semana = votacao.semana;
           for (const key in semana) {
             if (semana.hasOwnProperty(key)) {
-              let element = semana.name;
+              let element = semana;
               return element;
             }
           }
-        }).reduce((x, y) => x.includes(y) ? x : [...x, y], []);
+        });//.reduce((x, y) => x.includes(y) ? x : [...x, y], [])
 
         const restauranteVotado = Object.keys(restaura).map(restaurantVotado => {return { restaurantVotado };});
         const diaSemana = Object.keys(dia).map(diaSemana => {return { diaSemana }});
@@ -107,7 +107,7 @@ export class ResultadoService {
         return resultado;
       })
 
-      this.resultado = JSON.stringify(test);
+      //this.resultado = JSON.stringify(test);
       return this.resultado;
     }
 

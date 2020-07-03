@@ -55,7 +55,7 @@ export class VotacaoCreateComponent implements OnInit {
         let semana = votacao.semana;
         for (const key in semana) {
           if (semana.hasOwnProperty(key)) {
-            let element = semana.name;
+           // let element = semana.name;
             const validaSemana = this.semanaAtualService.semanaCorrente([semana])
             return validaSemana;
           }

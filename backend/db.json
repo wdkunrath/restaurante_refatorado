@@ -82,6 +82,12 @@
       "dataInit": "2020-06-15",
       "dataEnd": "2020-06-19",
       "id": 2
+    },
+    {
+      "name": "Semana 3",
+      "dataInit": "2020-07-03T01:09:50.147Z",
+      "dataEnd": "2020-07-03T01:09:50.147Z",
+      "id": 3
     }
   ],
   "dia-semana": [
@@ -117,150 +123,182 @@
   "votacao-restaurante": [
     {
       "id": 1,
-      "semana":[ {
-        "id": 1,
-        "name": "Semana 1",
-        "dataInit": "2020-06-08",
-        "dataEnd": "2020-06-12"
-      }],
+      "semana": [
+        {
+          "id": 1,
+          "name": "Semana 1",
+          "dataInit": "2020-06-08",
+          "dataEnd": "2020-06-12"
+        }
+      ],
       "diaSemana": "Segunda",
       "restaurant": "Restaurante Grill",
-      "User": [{
-        "id": 1,
-        "username": "Funcionario1",
-        "cargo": "padrao",
-        "password": "funcionario",
-        "firstName": "Funcionario",
-        "lastName": "1",
-        "token": "XSJD"
-      }]
+      "User": [
+        {
+          "id": 1,
+          "username": "Funcionario1",
+          "cargo": "padrao",
+          "password": "funcionario",
+          "firstName": "Funcionario",
+          "lastName": "1",
+          "token": "XSJD"
+        }
+      ]
     },
     {
-      "semana":[ {
-        "id": 1,
-        "name": "Semana 1",
-        "dataInit": "2020-06-08",
-        "dataEnd": "2020-06-12"
-      }],
+      "semana": [
+        {
+          "id": 1,
+          "name": "Semana 1",
+          "dataInit": "2020-06-08",
+          "dataEnd": "2020-06-12"
+        }
+      ],
       "diaSemana": "Quinta",
       "restaurant": "Restaurante Menino Deus",
       "id": 2,
-      "User": [{
-        "id": 1,
-        "username": "Funcionario1",
-        "cargo": "padrao",
-        "password": "funcionario",
-        "firstName": "Funcionario",
-        "lastName": "1",
-        "token": "XSJD"
-      }]
+      "User": [
+        {
+          "id": 1,
+          "username": "Funcionario1",
+          "cargo": "padrao",
+          "password": "funcionario",
+          "firstName": "Funcionario",
+          "lastName": "1",
+          "token": "XSJD"
+        }
+      ]
     },
     {
-      "semana": [{
-        "id": 1,
-        "name": "Semana 1",
-        "dataInit": "2020-06-08",
-        "dataEnd": "2020-06-12"
-      }],
+      "semana": [
+        {
+          "id": 1,
+          "name": "Semana 1",
+          "dataInit": "2020-06-08",
+          "dataEnd": "2020-06-12"
+        }
+      ],
       "diaSemana": "Quarta",
       "restaurant": "Restaurante Solene",
-      "user": [{
-        "id": 1,
-        "username": "test",
-        "firstName": "Test",
-        "lastName": "User",
-        "token": "fake-jwt-token"
-      }],
+      "user": [
+        {
+          "id": 1,
+          "username": "test",
+          "firstName": "Test",
+          "lastName": "User",
+          "token": "fake-jwt-token"
+        }
+      ],
       "id": 3
     },
     {
-      "semana":[ {
-        "id": 1,
-        "name": "Semana 1",
-        "dataInit": "2020-06-08",
-        "dataEnd": "2020-06-12"
-      }],
+      "semana": [
+        {
+          "id": 1,
+          "name": "Semana 1",
+          "dataInit": "2020-06-08",
+          "dataEnd": "2020-06-12"
+        }
+      ],
       "diaSemana": "Sexta",
       "restaurant": "Restaurante Mama Mia",
-      "user":[ {
-        "id": 1,
-        "username": "test",
-        "firstName": "Test",
-        "lastName": "User",
-        "token": "fake-jwt-token"
-      }],
+      "user": [
+        {
+          "id": 1,
+          "username": "test",
+          "firstName": "Test",
+          "lastName": "User",
+          "token": "fake-jwt-token"
+        }
+      ],
       "id": 4
     },
     {
-      "semana": [{
-        "id": 1,
-        "name": "Semana 1",
-        "dataInit": "2020-06-08",
-        "dataEnd": "2020-06-12"
-      }],
+      "semana": [
+        {
+          "id": 1,
+          "name": "Semana 1",
+          "dataInit": "2020-06-08",
+          "dataEnd": "2020-06-12"
+        }
+      ],
       "diaSemana": "Segunda",
       "restaurant": "Restaurante Grill",
-      "user": [{
-        "id": 2,
-        "username": "Funcionario1",
-        "firstName": "Funcionario",
-        "lastName": "Funcionario1",
-        "token": "fake-jwt-token"
-      }],
+      "user": [
+        {
+          "id": 2,
+          "username": "Funcionario1",
+          "firstName": "Funcionario",
+          "lastName": "Funcionario1",
+          "token": "fake-jwt-token"
+        }
+      ],
       "id": 5
     },
     {
-      "semana": [{
-        "id": 1,
-        "name": "Semana 1",
-        "dataInit": "2020-06-08",
-        "dataEnd": "2020-06-12"
-      }],
+      "semana": [
+        {
+          "id": 1,
+          "name": "Semana 1",
+          "dataInit": "2020-06-08",
+          "dataEnd": "2020-06-12"
+        }
+      ],
       "diaSemana": "Segunda",
       "restaurant": "Restaurante Grill",
-      "user": [{
-        "id": 3,
-        "username": "Funcionario8",
-        "firstName": "Moderador",
-        "lastName": "Moderador",
-        "token": "fake-jwt-token"
-      }],
+      "user": [
+        {
+          "id": 3,
+          "username": "Funcionario8",
+          "firstName": "Moderador",
+          "lastName": "Moderador",
+          "token": "fake-jwt-token"
+        }
+      ],
       "id": 6
     },
     {
-      "semana": [{
-        "id": 1,
-        "name": "Semana 1",
-        "dataInit": "2020-06-08",
-        "dataEnd": "2020-06-12"
-      }],
+      "semana": [
+        {
+          "id": 1,
+          "name": "Semana 1",
+          "dataInit": "2020-06-08",
+          "dataEnd": "2020-06-12"
+        }
+      ],
       "diaSemana": "Segunda",
       "restaurant": "Restaurante Mama Mia",
-      "user": [{
-        "id": 1,
-        "username": "test",
-        "firstName": "Test",
-        "lastName": "User",
-        "token": "fake-jwt-token"
-      }],
+      "user": [
+        {
+          "id": 1,
+          "username": "test",
+          "firstName": "Test",
+          "lastName": "User",
+          "token": "fake-jwt-token"
+        }
+      ],
       "id": 7
     },
     {
-      "semana": [{
-        "name": "Semana 2",
-        "dataInit": "2020-06-15",
-        "dataEnd": "2020-06-19",
-        "id": 2
-      }],
+      "semana": [
+        {
+          "name": "Semana 2",
+          "dataInit": "2020-06-15",
+          "dataEnd": "2020-06-19",
+          "id": 2
+        }
+      ],
       "diaSemana": "Segunda",
       "restaurant": "Restaurante Mama Mia",
-      "user": [{
-        "id": 1,
-        "username": "test",
-        "firstName": "Test",
-        "lastName": "User",
-        "token": "fake-jwt-token"
-      }],
+      "user": [
+        {
+          "id": 1,
+          "username": "test",
+          "firstName": "Test",
+          "lastName": "User",
+          "token": "fake-jwt-token"
+        }
+      ],
       "id": 8
     }
   ]

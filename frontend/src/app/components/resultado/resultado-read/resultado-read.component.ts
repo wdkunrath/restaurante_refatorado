@@ -20,11 +20,11 @@ export class ResultadoReadComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  buscaResultado(): void{
-    return this.resultadoresultado = this.resultadoService.estruturaResultado();
-  }
+  // buscaResultado(): void{
+  //   return this.resultadoresultado = this.resultadoService.estruturaResultado();
+  // }
 
-  get  estrutura(): string{
-    return this.buscaResultado();
-  }
+  // get  estrutura(): string{
+  //   return this.buscaResultado();
+  // }
 }
